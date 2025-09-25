@@ -7,13 +7,13 @@ int main() {
     else {
         int n = i - 1500;
         if (n%100) {
-           int h = ((n/100)+1) * 10;
-           printf("%d 元", 70 + h);
+            int h = ((n/100)+1) * 10;
+            printf("%d 元", 70 + h);
+        }
+        else {
+            printf("%d 元", 70 + (n/100) * 10);
+        }
     }
-    else {
-        printf("%d 元", 70 + (n/100) *10);
-    }
-}
 
-   return 0;
+    return 0;
 }
